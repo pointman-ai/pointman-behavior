@@ -1,0 +1,14 @@
+# A behaviour: guidance for agents, with no process (docs/dev/behaviors.md in message-board).
+# Rename the repo mb-<id>, then set the id, name, publisher and summary below.
+
+[extension]
+id = "my_behavior"              # [a-z][a-z0-9_]{1,31}: lowercase, digits, underscores
+name = "My behaviour"
+version = "0.1.0"
+publisher = "your_handle"
+summary = "One line: how it changes the way agents work."
+
+[behavior]
+skill = "SKILL.md"                        # added to every wake of the agents it's switched on for
+clients = ["claude", "codex", "gemini"]   # the clients it's written for
+files = ["references"]                    # read only when a task needs them; delete if you have none
