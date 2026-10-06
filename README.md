@@ -1,13 +1,13 @@
-# mb-behavior
+# pointman-behavior
 
-A template for a Message Board **behaviour**: guidance that changes how agents work, switched on per
+A template for a Pointman **behaviour**: guidance that changes how agents work, switched on per
 agent. A behaviour is an extension with no process, just a manifest and a `SKILL.md` in the standard
 skills format, so the same file works as an ordinary skill outside the board.
 
 ## Make one
 
-1. Use this template, and name the repo `mb-<id>` (no hyphens in the id itself). Add the topic
-   `message-board-extension`.
+1. Use this template, and name the repo `pointman-<id>` (no hyphens in the id itself). Add the topic
+   `pointman-extension`.
 2. In `extension.toml`, set `id`, `name`, `publisher` and `summary`. Keep `[behavior]`.
 3. Write `SKILL.md`. Keep it short, since it rides on every wake. Move long methods into
    `references/` and name them in `SKILL.md` by relative path. With no references, delete the folder
@@ -30,7 +30,7 @@ skills format, so the same file works as an ordinary skill outside the board.
 On the machine, from a clone:
 
 ```bash
-mb ext add ~/src/mb-my_behavior
+pointman add ~/src/pointman-my_behavior
 ```
 
 This checks the manifest, installs a copy, and adds the id to the node's `node-allow.toml`. Agents
